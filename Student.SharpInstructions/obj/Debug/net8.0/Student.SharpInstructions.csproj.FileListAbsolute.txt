@@ -1,0 +1,28 @@
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.exe
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.deps.json
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.runtimeconfig.json
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.dll
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.pdb
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.AssemblyInfoInputs.cache
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.AssemblyInfo.cs
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.csproj.CoreCompileInputs.cache
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.dll
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\refint\Student.SharpInstructions.dll
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.pdb
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.genruntimeconfig.cache
+C:\Users\DekasYT\Desktop\visual\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\ref\Student.SharpInstructions.dll
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.exe
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.deps.json
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.runtimeconfig.json
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.dll
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.pdb
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.AssemblyInfoInputs.cache
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.AssemblyInfo.cs
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.csproj.CoreCompileInputs.cache
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.dll
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\refint\Student.SharpInstructions.dll
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.pdb
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.genruntimeconfig.cache
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\ref\Student.SharpInstructions.dll
