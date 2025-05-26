@@ -26,3 +26,4 @@ C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstruct
 C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.pdb
 C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.genruntimeconfig.cache
 C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\ref\Student.SharpInstructions.dll
+C:\Users\KurmaevEA\Desktop\стажировка\3 лаба\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.sourcelink.json

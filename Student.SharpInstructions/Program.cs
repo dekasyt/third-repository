@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Net.Http.Headers;
 
 class Program
 {
@@ -8,222 +7,217 @@ class Program
         ShowMenu();
     }
 
-
-
-static void ShowMenu()
+    static void ShowMenu()
     {
-    while (true)
+        while (true)
         {
-        Console.WriteLine($"Для вызова выполняемой подпрограммы укажите ее номер и нажните Enter: \n1 - IF ELSE \n2 - WHILE \n3 - DO WHILE\n4 - FOR\n5 - FOREACH\n6 - SWITCH");
-            switch (int.Parse(Console.ReadLine())) 
+            Console.WriteLine("Для вызова подпрограммы укажите номер и нажмите Enter:\n1 - IF ELSE\n2 - WHILE\n3 - DO WHILE\n4 - FOR\n5 - FOREACH\n6 - SWITCH");
+            string proga = Console.ReadLine();
+            switch (proga)
             {
-                case 1: IfElse(); break;
-                case 2: While(); break;
-                case 3: DoWhile(); break;
-                case 4: For(); break;
-                case 5: Foreach(); break;
-                case 6: Switch(); break;
+                case "1": IfElse(); break;
+                case "2": While(); break;
+                case "3": DoWhile(); break;
+                case "4": For(); break;
+                case "5": Foreach(); break;
+                case "6": Switch(); break;
+                default: Console.WriteLine("Некорректный ввод! Пожалуйста, выберите номер из списка."); break;
             }
-
+            Console.WriteLine("Нажмите любую клавишу для продолжения...");
+            Console.ReadKey(true);
+            Console.Clear();
         }
-
     }
-  
 
     static void IfElse()
     {
-        Console.Clear();
-        Console.WriteLine("Для доступа на сайт введите Пароль");
-        string password = Console.ReadLine();
-        if (password == "Пароль")
-        {
-            Console.WriteLine("Пароль правильный, доступ открыт");
-        }
-        else 
-        { 
-            Console.WriteLine("Пароль не правильный"); 
-        }
-        Console.WriteLine("Для повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:");
-        var key = Console.ReadKey(true).Key;
-        if (key == ConsoleKey.Enter)
+        while (true)
         {
             Console.Clear();
-            IfElse();
+            Console.WriteLine("Введите Пароль для доступа на сайт:");
+            string password = Console.ReadLine();
+            if (password == "Пароль")
+            {
+                Console.WriteLine("Пароль верный, доступ открыт.");
+            }
+            else
+            {
+                Console.WriteLine("Пароль неверный.");
+            }
+            Console.WriteLine("Нажмите Enter для повтора или Esc для возврата в меню:");
+            var key = Console.ReadKey(true).Key;
+            if (key == ConsoleKey.Escape)
+            {
+                Console.Clear();
+                ShowMenu();
+                break;
+            }
         }
-        else if (key == ConsoleKey.Escape)
-        {
-            Console.Clear();
-
-        }
-
     }
 
     static void While()
     {
-        Console.Clear();
-        Console.WriteLine($"Телеграм лучший мессенджер? \n Дайте ответ: Да || Нет");
-        string a = "";
-        string b = "Да";
-        while (a != b)
-        {
-            a = Console.ReadLine();
-            if (a == "Нет")
-            {
-                Console.WriteLine("Ответ неверный");
-            }
-            else if(a != b && a != "Нет")
-            {
-                Console.WriteLine("Некорректный ввод"); 
-            }
-        }
-        Console.WriteLine("Ответ верный");
-        Console.WriteLine("Для повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:");
-        var key = Console.ReadKey(true).Key;
-        if (key == ConsoleKey.Enter)
+        while (true)
         {
             Console.Clear();
-            While();
-        }
-        else if (key == ConsoleKey.Escape)
-        {
-            Console.Clear();
-
+            string a = "";
+            string b = "Да";
+            Console.WriteLine("Телеграм — лучший мессенджер?\nОтветьте: Да || Нет");
+            while (a != b)
+            {
+                a = Console.ReadLine();
+                if (a == "Нет")
+                {
+                    Console.WriteLine("Повторите попытку.");
+                }
+                else if (a != b && a != "Нет")
+                {
+                    Console.WriteLine("Введите Да || Нет");
+                }
+            }
+            Console.WriteLine("Ответ верный.");
+            Console.WriteLine("Нажмите Enter для повтора или Esc для возврата в меню:");
+            var key = Console.ReadKey(true).Key;
+            if (key == ConsoleKey.Escape)
+            {
+                Console.Clear();
+                ShowMenu();
+                break;
+            }
         }
     }
 
     static void DoWhile()
     {
-        Console.Clear();
-        string Po;
-        do
-        {
-            Console.WriteLine($"Вам нужно отдохнуть? \nДа || Нет");
-            Po = Console.ReadLine();
-        }
-        while (Po != "Да");
-        
-        Console.WriteLine("Программа завершена.");
-        Console.WriteLine("Для повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:");
-        var key = Console.ReadKey(true).Key;
-        if (key == ConsoleKey.Enter)
+        while (true)
         {
             Console.Clear();
-            DoWhile();
-        }
-        else if (key == ConsoleKey.Escape)
-        {
-            Console.Clear();
-
+            string a = "";
+            do
+            {
+                Console.WriteLine("Вам нужно отдохнуть?\nОтветьте: Да || Нет");
+                a = Console.ReadLine();
+            }
+            while (a != "Да");
+            Console.WriteLine("Программа завершена.");
+            Console.WriteLine("Нажмите Enter для повтора или Esc для возврата в меню:");
+            var key = Console.ReadKey(true).Key;
+            if (key == ConsoleKey.Escape)
+            {
+                Console.Clear();
+                ShowMenu();
+                break;
+            }
         }
     }
 
     static void For()
     {
-
-        Console.Clear();
-        Console.WriteLine("Для выполнения подпрограммы FOR введите начальное число и количество повторений последовательно через Enter, для возврата к списку подпрограмм нажмите Esc:");
-        int a = Convert.ToInt32(Console.ReadLine());
-        int b = Convert.ToInt32(Console.ReadLine());
-        for (int i = a; i <= b; i++)
-        {
-            Console.WriteLine(i); 
-        }
-        Console.WriteLine("Для повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:");
-        var key = Console.ReadKey(true).Key;
-        if (key == ConsoleKey.Enter)
+        while (true)
         {
             Console.Clear();
-            For();
-        }
-        else if (key == ConsoleKey.Escape)
-        {
-            Console.Clear();
-
-        }
-
-    }
-    static void Foreach()
-    {
-        Console.Clear();
-        Console.WriteLine("Для регистрации введите: ФИО, пол, дату рождения, номер телефона, адрес прописки");
-        string[] userdata = new string[5];
-
-        Console.WriteLine("Введите ФИО: ");
-        userdata[0] = Console.ReadLine();
-
-
-        Console.WriteLine("Введите пол: ");
-        userdata[1] = Console.ReadLine();
-
-
-        Console.WriteLine("Введите дату рождения: ");
-        userdata[2] = Console.ReadLine();
-
-
-        Console.WriteLine("Введите номер телефона: ");
-        userdata[3] = Console.ReadLine();
-
-
-        Console.WriteLine("Введите адрес прописки: ");
-        userdata[4] = Console.ReadLine();
-
-
-        Console.WriteLine($"Введенные данные верны? \n Да || Нет");
-        string a = Console.ReadLine();
-        if (a == "Да")
-        {
-            Console.WriteLine("Введенные данные: ");
-            foreach (string z in userdata)
+            Console.WriteLine("Для цикла FOR введите начальное число и количество повторений через Enter:");
+            string a = Console.ReadLine();
+            string b = Console.ReadLine();
+            if (int.TryParse(a, out int c) && int.TryParse(b, out int d))
             {
-                Console.WriteLine(z);
+                for (int i = c; i < c + d; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Ошибка: введите корректные числа.");
+            }
+            Console.WriteLine("Нажмите Enter для повтора или Esc для возврата в меню:");
+            var key = Console.ReadKey(true).Key;
+            if (key == ConsoleKey.Escape)
+            {
+                Console.Clear();
+                ShowMenu();
+                break;
             }
         }
-        else if (a == "Нет")
-        {
-            Console.WriteLine("Перезапустите форму!");
-        }
-        else
-        {
-            Console.WriteLine("Некорректный ввод!");
-        }
-            Console.WriteLine("Для повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:");
-        var key = Console.ReadKey(true).Key;
-        if (key == ConsoleKey.Enter)
-        {
-            Console.Clear();
-            Foreach();
-        }
-        else if (key == ConsoleKey.Escape)
-        {
-            Console.Clear();
-
-        }
-        
     }
+
+    static void Foreach()
+    {
+        while (true)
+        {
+            Console.Clear();
+            Console.WriteLine("Для регистрации введите: ФИО, пол, дату рождения, номер телефона, адрес прописки");
+            string[] userdata = new string[5];
+            Console.WriteLine("ФИО:");
+            userdata[0] = Console.ReadLine();
+            Console.WriteLine("Пол:");
+            userdata[1] = Console.ReadLine();
+            Console.WriteLine("Дата рождения:");
+            userdata[2] = Console.ReadLine();
+            Console.WriteLine("Номер телефона:");
+            userdata[3] = Console.ReadLine();
+            Console.WriteLine("Адрес прописки:");
+            userdata[4] = Console.ReadLine();
+
+            Console.WriteLine("Введенные данные верны?\nДа || Нет");
+            string a = Console.ReadLine();
+            if (a == "Да")
+            {
+                Console.WriteLine("Введенные данные:");
+                foreach (string item in userdata)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+            else if (a == "Нет")
+            {
+                Console.WriteLine("Перезапустите форму.");
+            }
+            else
+            {
+                Console.WriteLine("Некорректный ввод!");
+            }
+            Console.WriteLine("Нажмите Enter для повтора или Esc для возврата в меню:");
+            var key = Console.ReadKey(true).Key;
+            if (key == ConsoleKey.Escape)
+            {
+                Console.Clear();
+                ShowMenu();
+                break;
+            }
+        }
+    }
+
     static void Switch()
     {
-        Console.Clear();
-        Console.WriteLine("номер месяца (целое число от 1 до 12), программа выводит к какому сезону относится этот месяц: Зима, Весна, Лето или Осень");
-        int number = Convert.ToInt32(Console.ReadLine());
-        switch (number)
-        {
-            case 1: case 2: case 12: Console.WriteLine("Зима"); break;
-            case 3: case 4: case 5: Console.WriteLine("Весна"); break;
-            case 6: case 7: case 8: Console.WriteLine("Лето"); break;
-            case 9: case 10: case 11: Console.WriteLine("Осень"); break;
-            default: Console.WriteLine("Некорректный ввод"); break;
-        }
-        Console.WriteLine("Для повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:");
-        var key = Console.ReadKey(true).Key;
-        if (key == ConsoleKey.Enter)
+        while (true)
         {
             Console.Clear();
-            Switch();
-        }
-        else if (key == ConsoleKey.Escape)
-        {
-            Console.Clear();
-
+            Console.WriteLine("Введите номер месяца (1-12):");
+            string a = Console.ReadLine();
+            if (int.TryParse(a, out int b))
+            {
+                switch (b)
+                {
+                    case 1: case 2: case 12: Console.WriteLine("Зима"); break;
+                    case 3: case 4: case 5: Console.WriteLine("Весна"); break;
+                    case 6: case 7: case 8: Console.WriteLine("Лето"); break;
+                    case 9: case 10: case 11: Console.WriteLine("Осень"); break;
+                    default: Console.WriteLine("Ошибка: введите число от 1 до 12."); break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Ошибка: введите корректное число.");
+            }
+            Console.WriteLine("Нажмите Enter для повтора или Esc для возврата в меню:");
+            var key = Console.ReadKey(true).Key;
+            if (key == ConsoleKey.Escape)
+            {
+                Console.Clear();
+                ShowMenu();
+                break;
+            }
         }
     }
 }
